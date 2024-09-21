@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
 
-.cache/
 cache.pkl
 
 .swp
