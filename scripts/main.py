@@ -16,8 +16,8 @@ def cache_shapefile(shapefile_path, cache_path):
     return gdf
 
 tempoInicio = time.time()
-shapefile_path = r"D:\Programação\DesmatamentoPY\Desmatamento\data\yearly_deforestation_biome.shp"
-cache_path = r"D:\Programação\DesmatamentoPY\Desmatamento\cache\cache.pkl"
+shapefile_path = os.environ.get("pathShapefile")
+cache_path = os.environ.get("pathCache")
 
 if not os.path.exists(shapefile_path):
     print(f"Arquivo não encontrado: {shapefile_path}")
