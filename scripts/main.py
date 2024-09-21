@@ -19,12 +19,12 @@ tempoInicio = time.time()
 shapefile_path = os.environ.get("pathShapefile")
 cache_path = os.environ.get("pathCache")
 
+anoProcurado = int(input("digite o ano: ")) 
+
 if not os.path.exists(shapefile_path):
     print(f"Arquivo não encontrado: {shapefile_path}")
 else:
-    gdf = cache_shapefile(shapefile_path, cache_path)
-
-anoProcurado = int(input("digite o ano: "))    
+    gdf = cache_shapefile(shapefile_path, cache_path)   
 
 gdf_sorted = gdf.sort_values(by="year", ascending=True)
 dates = gdf_sorted["year"].tolist()
