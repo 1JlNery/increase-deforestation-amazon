@@ -71,7 +71,6 @@ resultadoDado['centroid'] = resultadoDado.geometry.centroid
 resultadoDado = resultadoDado[resultadoDado['centroid'].notnull()]
 
 fig, ax = plt.subplots(figsize=(10, 10))
-ax.grid(True, color='black', linestyle='--', linewidth=0.2)
 
 plt.title(f"Pontos de Desmatamento - Ano {anoProcurado}", fontsize=14)
 plt.xlabel("Longitude")
