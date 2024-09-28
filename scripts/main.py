@@ -1,10 +1,7 @@
 import geopandas as gpd
 import os
-import time
 import pickle
 import matplotlib.pyplot as plt
-
-tempoInicio = time.time()
 
 def cache_shapefile(shapefile_path, cache_path):
     if os.path.exists(cache_path):
@@ -56,7 +53,6 @@ if anoEncontrado is not None:
         resultados.append(gdf_sorted.iloc[i])
         i += 1
     resultadoDado = gpd.GeoDataFrame(resultados)
-    print("resultado encontrado: \n",resultadoDado)
 else:
     print("data não foi encontrada")
 
@@ -79,7 +75,3 @@ plt.ylabel("Latitude")
 resultadoDado['centroid'].apply(lambda x: plt.plot(x.x, x.y, marker='o', color='red', markersize=1))
 
 plt.show()
-
-tempoFinal = time.time()
-tempoTotal = round(tempoFinal - tempoInicio)
-print(f"Tempo executando: {tempoTotal}s")
