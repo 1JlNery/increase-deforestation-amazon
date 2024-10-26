@@ -16,11 +16,11 @@
      Imagens
 </h3>
 <h4>
-     <strong>Imagens de áreas afetadas por desmatamento em 2008<strong>
+     <strong>Imagens de áreas afetadas por desmatamento em 2008</strong>
 </h4>
 <img src="https://github.com/user-attachments/assets/77608f03-869d-4379-81fd-15859333b215">
 
 <h4>
-     <strong>Imagens de áreas afetadas por desmatamento em 2023<strong>
+     <strong>Imagens de áreas afetadas por desmatamento em 2023</strong>
 </h4>
 <img src="https://github.com/user-attachments/assets/c861fb6e-a909-4bd6-a650-6410da6d09da">
