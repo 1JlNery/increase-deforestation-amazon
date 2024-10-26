@@ -21,6 +21,10 @@
 <img src="https://github.com/user-attachments/assets/77608f03-869d-4379-81fd-15859333b215">
 
 <p>
-     <b>Imagens de áreas afetadas por desmatamento em 2023</b>
+     <span class = "big">Imagens de áreas afetadas por desmatamento em 2023</span>
 </p>
 <img src="https://github.com/user-attachments/assets/c861fb6e-a909-4bd6-a650-6410da6d09da">
+
+.big {
+  font-size: larger;
+}
